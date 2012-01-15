@@ -21,6 +21,11 @@
 (def example-file
   (str (io/as-file (io/resource "example.xml"))))
 
-;; Use like this:
-;;
-;; (generate-png example-file) => a byte-array
+(comment
+  "Example!"
+  (defn dump-example-to-disk
+    [output-path]
+    (io/copy (generate-png example-file)
+             (io/file output-path)))
+
+  (generate-png "/Users/sritchie/Desktop/output.png"))
