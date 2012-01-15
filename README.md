@@ -16,13 +16,8 @@ On OS X Lion, install Mapnik with [homebrew](http://mxcl.github.com/homebrew/):
 
 ```bash
 brew update
-brew install mapnik
-```
-
-If either of these fail on OS X Lion with this error -- `configure: error: C compiler cannot create executables` -- run the dependency installation again with the `--use-clang` option:
-
-```bash
-brew install --use-clang mapnik
+sudo chown -R $USER /Library/Python
+brew install --use-clang  mapnik
 ```
 
 If cairomm fails, you may need to install it with Macports before proceeding:
