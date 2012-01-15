@@ -10,7 +10,11 @@ As a starting point we'll want to look at the [mapnik-jni](https://github.com/Sp
 
 ## Mapnik & Friends
 
-Download and install mapnik and its dependencies with [homebrew](http://mxcl.github.com/homebrew/):
+Download and install mapnik and its dependencies.
+
+## OS X Lion
+
+Install with [homebrew](http://mxcl.github.com/homebrew/):
 
 ```bash
 brew update
@@ -37,6 +41,20 @@ installed software in a non-standard prefix.
 Alternatively, you may set the environment variables CAIROMM_CFLAGS
 and CAIROMM_LIBS to avoid the need to call pkg-config.
 See the pkg-config man page for more details.
+```
+
+If you're still stuck, another option is this [Homebrew recipe](http: //trac.mapnik.org/wiki/MacInstallation/Homebrew).
+
+
+## Unubtu 
+
+To install it on Ubuntu: 
+
+```bash
+sudo apt-get install build-essential curl wget python-software-properties
+sudo add-apt-repository ppa:mapnik/nightly-trunk
+sudo apt-get update
+sudo apt-get install libmapnik libmapnik-dev mapnik-utils
 ```
 
 ## Mapnik-JNI
