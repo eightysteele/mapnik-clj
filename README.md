@@ -6,15 +6,9 @@ The mapnik-clj project is a [Clojure](https://github.com/clojure/clojure) wrappe
 
 As a starting point we'll want to look at the [mapnik-jni](https://github.com/SpatialInteractive/mapnik-jni) project for Java bindings to Mapnik.
 
-# Build Instructions
+## Install Mapnik & Friends
 
-## Mapnik & Friends
-
-Download and install mapnik and its dependencies.
-
-## OS X Lion
-
-Install with [homebrew](http://mxcl.github.com/homebrew/):
+For OS X Lion, install with [homebrew](http://mxcl.github.com/homebrew/):
 
 ```bash
 brew update
@@ -45,10 +39,7 @@ See the pkg-config man page for more details.
 
 If you're still stuck, another option is this [Homebrew recipe](http: //trac.mapnik.org/wiki/MacInstallation/Homebrew).
 
-
-## Unubtu 
-
-To install it on Ubuntu: 
+To install it on Ubuntu, fire up your command line and type: 
 
 ```bash
 sudo apt-get install build-essential curl wget python-software-properties
