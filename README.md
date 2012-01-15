@@ -8,7 +8,11 @@ As a starting point we'll want to look at the [mapnik-jni](https://github.com/Sp
 
 ## Install Mapnik & Friends
 
-For OS X Lion, install with [homebrew](http://mxcl.github.com/homebrew/):
+Mapnik-clj wraps the Mapnik C++ API. To use Mapnik-clj you'll need a local installation of Mapnik.
+
+### OS X
+
+On OS X Lion, install Mapnik with [homebrew](http://mxcl.github.com/homebrew/):
 
 ```bash
 brew update
@@ -21,25 +25,17 @@ If either of these fail on OS X Lion with this error -- `configure: error: C com
 brew install --use-clang mapnik
 ```
 
-(I actually had to install `cairomm` with MacPorts, ie `sudo port install cairomm`, due to this error:
+If cairomm fails, you may need to install it with Macports before proceeding:
 
 ```bash
-checking for CAIROMM... configure: error: Package requirements (cairo >= 1.8.0 sigc++-2.0) were not met:
-
-No package 'cairo' found
-No package 'sigc++-2.0' found
-
-Consider adjusting the PKG_CONFIG_PATH environment variable if you
-installed software in a non-standard prefix.
-
-Alternatively, you may set the environment variables CAIROMM_CFLAGS
-and CAIROMM_LIBS to avoid the need to call pkg-config.
-See the pkg-config man page for more details.
+sudo port install cairomm
 ```
 
-If you're still stuck, another option is this [Homebrew recipe](http: //trac.mapnik.org/wiki/MacInstallation/Homebrew).
+If you're still stuck, another option is this [Homebrew recipe](http://trac.mapnik.org/wiki/MacInstallation/Homebrew).
 
-To install it on Ubuntu, fire up your command line and type: 
+### Ubuntu 
+
+To install Mapnik on Ubuntu, fire up your command line and type: 
 
 ```bash
 sudo apt-get install build-essential curl wget python-software-properties
@@ -59,7 +55,6 @@ sudo apt-get install ant1.7 ant-optional libcairomm-1.0-1 libcairomm-1.0-dev
 ```
 
 After that, you can build Mapnik-JNI like this:
-
 
 ```bash
 git clone https://github.com/SpatialInteractive/mapnik-jni.git`
