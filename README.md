@@ -20,7 +20,7 @@ sudo chown -R $USER /Library/Python
 brew install --use-clang  mapnik
 ```
 
-If cairomm fails, you may need to install it with Macports before proceeding:
+If `cairomm` fails, you may need to install it with Macports before proceeding:
 
 ```bash
 sudo port install cairomm
