@@ -43,6 +43,22 @@ sudo apt-get install libmapnik libmapnik-dev mapnik-utils
 
 Building Mapnik-JNI requires [Ant](http://ant.apache.org), a Java build tool and [cairomm](http://cairographics.org/cairomm), a C++ wrapper for the cairo graphics library. 
 
+### OS X Lion
+
+The OS X bindings have been prebuilt and uploaded to the [mapnik-clj download page](https://github.com/eightysteele/mapnik-clj/downloads). Download the OS X native binding and place it somewhere on `JAVA_LIBRARY_PATH`. (I prefer `/opt/local/lib`). Check if everything's dandy by running `lein midje` in the project directory.
+
+If you get an `UnsatisfiedLinkException`, you'll probably have to build the bindings from scratch for you own system. To do this, run the follow commands in the terminal:
+
+```bash
+git clone https://github.com/SpatialInteractive/mapnik-jni.git`
+cd mapnik-jni
+ant test
+```
+
+The OS X native binding will be located at `build/dist/libmapnik-jni.jnilib` in the `mapnik-jni` directory. Use this instead of the mapnik-clj-supplied binding and you should be good to go.
+
+### Ubuntu
+
 On Ubuntu you can install Ant and cairomm like this:
 
 ```bash
@@ -57,6 +73,6 @@ cd mapnik-jni
 ant test
 ```
 
-## Native Binding Installation
+Move the native binding inside of `build/dist` to somewhere on `JAVA_LIBRARY_PATH` and you'll be ready to move on to the project demo.
 
 
