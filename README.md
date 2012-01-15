@@ -50,7 +50,7 @@ sudo apt-get install libmapnik libmapnik-dev mapnik-utils
 
 ## Mapnik-JNI
 
-Building Mapnik-JNI requires [Ant](http://ant.apache.org), a Java build tool and [cairomm](http://cairographics.org/cairomm), is a C++ wrapper for the cairo graphics library. 
+Building Mapnik-JNI requires [Ant](http://ant.apache.org), a Java build tool and [cairomm](http://cairographics.org/cairomm), a C++ wrapper for the cairo graphics library. 
 
 On Ubuntu you can install Ant and cairomm like this:
 
@@ -58,7 +58,7 @@ On Ubuntu you can install Ant and cairomm like this:
 sudo apt-get install ant1.7 ant-optional libcairomm-1.0-1 libcairomm-1.0-dev
 ```
 
-With Ant installed, you can build Mapnik-JNI like this:
+After that, you can build Mapnik-JNI like this:
 
 
 ```bash
