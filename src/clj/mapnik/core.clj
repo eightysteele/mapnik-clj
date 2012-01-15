@@ -2,7 +2,7 @@
   (:require [mapnik.util :as u]
             [clojure.java.io :as io])
   (:import [mapnik Box2d Mapnik MapDefinition
-            Projection Image]))
+            Projection Image Renderer]))
 
 (def bounds
   (Box2d. -180 -90 180 90))
