@@ -1,6 +1,6 @@
 (ns mapnik.test.core
-  (:use [mapnik.core])
-  (:use [clojure.test]))
+  (:use mapnik.core
+        midje.sweet))
 
-(deftest replace-me ;; FIXME: write
-  (is false "No tests have been written."))
+(fact "Default test!"
+  (boolean "HI!") => true)
