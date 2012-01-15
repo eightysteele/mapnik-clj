@@ -16,7 +16,7 @@
      (empty? bindings) `(do ~@body)
      (symbol? sym)     `(let [~sym ~val]
                           (try 
-                            (with-open ~(subvec bindings 2) ~@body)
+                            (with-mem ~(subvec bindings 2) ~@body)
                             (finally
                              (.dispose ~sym))))
      :else (throw (IllegalArgumentException.
