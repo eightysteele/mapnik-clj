@@ -53,7 +53,7 @@ sudo apt-get install libmapnik libmapnik-dev mapnik-utils
 Building Mapnik-JNI requires [Ant](http://ant.apache.org), a Java build tool. On Ubuntu you can install Ant like this:
 
 ```bash
-sudo apt-get install ant1.7
+sudo apt-get install ant1.7 ant-optional
 ```
 
 With Ant installed, you can build Mapnik-JNI like this:
