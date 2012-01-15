@@ -16,7 +16,7 @@ On OS X Lion, install Mapnik with [homebrew](http://mxcl.github.com/homebrew/):
 
 ```bash
 brew update
-sudo chown -R $USER /Library/Python
+sudo chown -R $USER /Library/Python # for OS X Python
 brew install --use-clang  mapnik
 ```
 
