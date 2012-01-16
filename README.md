@@ -1,8 +1,8 @@
 # What is the mapnik-clj project?
 
-Mapnik-clj wraps the [Mapnik](https://github.com/mapnik/mapnik) C++ API in [Clojure](https://github.com/clojure/clojure). Mapnik is an API for building beautiful maps. Projects like CartoDB and TileMill use it for rending and tiling map tiles.
+Mapnik-clj wraps the [Mapnik](https://github.com/mapnik/mapnik) C++ API in [Clojure](https://github.com/clojure/clojure). Mapnik is an API for building beautiful maps. Projects like [CartoDB](http:cartodb.com) and [TileMill](http://mapbox.com/tilemill/) use it for rending and tiling thier map tiles.
 
-First tile!
+Here's our first tile!
 
 ![](https://s3.amazonaws.com/uploads.hipchat.com/10153/26983/kg8ormtrglj0c8i/cakenutd.png)
 
