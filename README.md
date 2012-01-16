@@ -8,7 +8,7 @@ Here's our first tile!
 
 # Let's get started
 
-This project depends on the [mapnik-jni](https://github.com/SpatialInteractive/mapnik-jni) project for Java Mapnik indings.
+This project depends on the [mapnik-jni](https://github.com/SpatialInteractive/mapnik-jni) for Java Mapnik bindings.
 
 ## Install Mapnik & Friends
  
