@@ -1,14 +1,18 @@
 # What is the mapnik-clj project?
 
-The mapnik-clj project is a [Clojure](https://github.com/clojure/clojure) wrapper for [Mapnik](https://github.com/mapnik/mapnik), an API for building beautiful maps.
+Mapnik-clj wraps the [Mapnik](https://github.com/mapnik/mapnik) C++ API in [Clojure](https://github.com/clojure/clojure). Mapnik is an API for building beautiful maps. Projects like CartoDB and TileMill use it for rending and tiling map tiles.
+
+First tile!
+
+![](https://s3.amazonaws.com/uploads.hipchat.com/10153/26983/kg8ormtrglj0c8i/cakenutd.png)
 
 # Let's get started
 
-As a starting point we'll want to look at the [mapnik-jni](https://github.com/SpatialInteractive/mapnik-jni) project for Java bindings to Mapnik.
+This project depends on the [mapnik-jni](https://github.com/SpatialInteractive/mapnik-jni) project for Java Mapnik indings.
 
 ## Install Mapnik & Friends
-
-Mapnik-clj wraps the Mapnik C++ API. To use Mapnik-clj you'll need a local installation of Mapnik.
+ 
+To use Mapnik-clj you'll need a local installation of Mapnik.
 
 ### OS X
 
