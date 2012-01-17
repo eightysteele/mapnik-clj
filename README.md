@@ -81,7 +81,7 @@ curl -O https://raw.github.com/gist/1626582/80f081a55bf3ab938fa96020c76160b49bcd
 git apply ltdl-mapnik.diff
 
 # Build and install Mapnik
-./compile
+./configure
 make
 sudo make install
 
