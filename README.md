@@ -72,9 +72,25 @@ sudo apt-get install ant1.7 ant-optional libcairomm-1.0-1 libcairomm-1.0-dev
 After that, you can build Mapnik-JNI like this:
 
 ```bash
-git clone https://github.com/SpatialInteractive/mapnik-jni.git`
+# Clone Mapnik
+https://github.com/mapnik/mapnik.git
+cd mapnik
+
+# Download and apply this patch: https://gist.github.com/1626582
+curl -O https://raw.github.com/gist/1626582/80f081a55bf3ab938fa96020c76160b49bcd04a4/ltdl-mapnik.diff
+git apply ltdl-mapnik.diff
+
+# Build and install Mapnik
+./compile
+make
+sudo make install
+
+# Clone Dane's fork of Mapnik-jni
+cd ../
+https://github.com/springmeyer/mapnik-jni
 cd mapnik-jni
 ant test
+ant
 ```
 
 Move the native binding inside of `build/dist` to somewhere on `JAVA_LIBRARY_PATH` and you'll be ready to move on to the project demo.
