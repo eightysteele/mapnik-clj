@@ -73,7 +73,7 @@ After that, you can build Mapnik-JNI like this:
 
 ```bash
 # Clone Mapnik
-https://github.com/mapnik/mapnik.git
+git clone https://github.com/mapnik/mapnik.git
 cd mapnik
 
 # Download and apply this patch: https://gist.github.com/1626582
@@ -87,7 +87,7 @@ sudo make install
 
 # Clone Dane's fork of Mapnik-jni
 cd ../
-https://github.com/springmeyer/mapnik-jni
+git clone https://github.com/springmeyer/mapnik-jni
 cd mapnik-jni
 ant test
 ant
